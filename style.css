@@ -1,0 +1,192 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #bf6445, #333);
+    color: white; /* White text for contrast */
+    background-attachment: fixed; /* Fix background during scroll */
+    background-size: cover; /* Ensure the gradient covers the entire background */
+    min-height: 100vh; /* Ensure the background fills the entire viewport */
+}
+body:hover{
+    background: linear-gradient(135deg, #333, #bf6445); /* Reverse gradient on hover */
+    transition: background 0.5s ease-in-out;
+}
+/* Text shadow for better readability */
+h1, p, li, a {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add depth to the text */
+}
+h2{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add depth to the text */
+    font-size: 30px;
+}
+
+
+header {
+    background-color: rgb(166, 93, 68);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: none; 
+}
+
+#about {
+    padding: 30px;
+    text-align: center;
+}
+
+#home {
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); /* Add button shadow */
+    text-shadow: none; /* Remove text shadow for clarity */
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent card */
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Strong shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+}
+
+.project h3 {
+    margin: 10px 0 5px;
+}
+
+.project p {
+    margin: 0 0 10px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input, #contact textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Blue view project button */
+.view-project-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #333, #ffab8f);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s; /* Smooth transition for background change */
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.view-project-btn:hover {
+    background: linear-gradient(135deg, #ff5722, #333); /* Reverse gradient on hover */
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(135deg, #bf6445, #333); /* Gradient background matching body */
+    color: white; /* White text */
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    width: 100%;
+    font-size: 1.4rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); /* Strong shadow for depth */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow on text for 3D effect */
+}
+
+/* Footer hover effect */
+footer:hover {
+    background: linear-gradient(135deg, #333, #bf6445); /* Reverse gradient on hover */
+    transition: background 0.5s ease-in-out;
+}
+
+/* Section headings center alignment */
+h2 {
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
